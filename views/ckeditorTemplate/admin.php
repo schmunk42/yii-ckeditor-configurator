@@ -33,7 +33,7 @@ return false;
     ),
     'columns'=>array(
 		array('header'=>'','value'=>'$data["title"]'),
-		#'id',
+		'id',
 		'title',
 		'image',
 #		'description',
