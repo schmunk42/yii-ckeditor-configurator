@@ -2,7 +2,7 @@
 
 class CkeditorStyleController extends Controller
 {
-    #public $layout='//layouts/column2';
+    public $layout='//layouts/column1';
     public $defaultAction = "admin";
     public $scenario = "crud";
 
