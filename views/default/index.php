@@ -2,11 +2,11 @@
 $this->breadcrumbs = array(
     $this->module->id,
 );
-$this->pageTitle = "CKEditor Configurator";
+$this->pageTitle = "CKEditor Configurator 1.0";
 ?>
 <h1>CKEditor <small>Configurator</small></h1>
 <p>
-    This module provides the ability to configurate the templates and styles availible in the CKEditor.
+    This module provides the ability to configurate the templates and styles that will be further availible in your CKEditor.
 </p>
 <div class="row">
     <div class="span12">
