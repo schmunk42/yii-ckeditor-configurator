@@ -18,10 +18,13 @@ Quick-Start
 ### Step 1
 If you have [composer already installed](http://getcomposer.org/doc/00-intro.md#installation-nix)
    
-```
-composer.phar require schmunk42/ckeditor-configurator
+`composer.phar require schmunk42/ckeditor-configurator`
 
-```
+**or**
+
+add the package `schmunk42/ckeditor-configurator` to your composer.json
+
+
 *!!! You need to have already setup a database connection for the ckeditor-configurator migration !!!*
 
 ### Step 2  
