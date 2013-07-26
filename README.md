@@ -35,6 +35,7 @@ add the package `schmunk42/ckeditor-configurator` to your composer.json
 'modules' => array(
         'ckeditorConfigurator' => array(
             'class' => 'vendor.schmunk42.ckeditor-configurator.CkeditorConfiguratorModule',
+            ),
         ),
 ```
 
