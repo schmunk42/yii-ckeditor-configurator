@@ -51,6 +51,19 @@ add the package `schmunk42/ckeditor-configurator` to your composer.json
 ),
 ```
 
+[SETUP] edit in app/config/console.php
+
+**REQUIRED**
+```php
+'migrate' => array(
+        'modulePaths' => array(
+            ...
+            'ckeditor-configurator' => 'vendor.schmunk42.ckeditor-configurator.migrations',
+            ...
+            ),
+        ),
+```
+
 OPTIONAL 
 *(if you have  schmunk42/multi-theme installed, you can say in wich theme should the CKEditor-Configurator be displayed)*
 ```php
