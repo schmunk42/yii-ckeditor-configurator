@@ -8,7 +8,9 @@ class DefaultController extends Controller
 	}
 
     public function actionCkstyles() {
-        $models = CkeditorStyle::model()->findAll();
+        $models = CkeditorStyle::model()->findAll(array(
+            'order' => 'name'
+        ));
         $style = array();
 
         foreach ($models AS $model) {
@@ -38,7 +40,9 @@ class DefaultController extends Controller
     }
 
     public function actionCktemplates() {
-        $models = CkeditorTemplate::model()->findAll();
+        $models = CkeditorTemplate::model()->findAll(array(
+            'order' => 'title'
+        ));
         $templates = array();
         foreach($models AS $model) {
             $templates[] = $model->attributes;
