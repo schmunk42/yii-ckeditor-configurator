@@ -14,7 +14,8 @@
     ],
     "require": {
         "php": ">=5.3.0",
-        "yiisoft/yii" : "1.1.*"
+        "yiisoft/yii" : ">=1.1.14",
+        "schmunk42/relation" : "1.*"
     },
     "suggest": {
         "ckeditor": "Any ckeditor extension"
