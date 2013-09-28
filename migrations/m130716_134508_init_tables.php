@@ -4,7 +4,7 @@ class m130716_134508_init_tables extends EDbMigration
 {
     public function up()
     {
-        if (Yii::app()->db->schema instanceof CMysqlSchema) {
+        if ($this->dbConnection->schema instanceof CMysqlSchema) {
             $options = 'ENGINE=InnoDB DEFAULT CHARSET=utf8';
         } else {
             $options = '';
