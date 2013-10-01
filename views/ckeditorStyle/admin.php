@@ -32,7 +32,12 @@ $this->widget('TbGridView', array(
         'displayFirstAndLast' => true,
     ),
     'columns' => array(
-        array('header' => '', 'value' => '$data["name"]'),
+        array(
+                'class'=>'CLinkColumn',
+                'header'=>'',
+                'labelExpression'=> '"[".$data["element"]."] ".$data["name"]',
+                'urlExpression'=> 'Yii::app()->controller->createUrl("view", array("id" => $data["id"]))'
+            ),
         #'id',
         'name',
         'element',

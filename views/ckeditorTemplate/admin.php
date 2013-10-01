@@ -32,10 +32,15 @@ return false;
         'displayFirstAndLast' => true,
     ),
     'columns'=>array(
-		array('header'=>'','value'=>'$data["title"]'),
+		array(
+                'class'=>'CLinkColumn',
+                'header'=>'',
+                'labelExpression'=> '"[".$data["title"]."] ".$data["description"]',
+                'urlExpression'=> 'Yii::app()->controller->createUrl("view", array("id" => $data["id"]))'
+            ),
 		#'id',
 		'title',
-		'image',
+		#'image',
 #		'description',
 #		'html',
         array(
