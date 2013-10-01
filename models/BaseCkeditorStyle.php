@@ -39,9 +39,9 @@ abstract class BaseCkeditorStyle extends CActiveRecord{
 	{
 		return array_merge(
 		    parent::behaviors(), array(
-			'savedRelated' => array(
-				'class' => 'gii-template-collection.components.CSaveRelationsBehavior'
-			)
+//			'savedRelated' => array(
+//				'class' => 'gii-template-collection.components.CSaveRelationsBehavior'
+//			)
 		    )
 		);
 	}
